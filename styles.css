@@ -1,0 +1,131 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the background image and basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Keep the solid black background */
+    color: #fff; /* Default text color */
+    background-image: url('background.png'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: auto; /* Enable vertical scrolling */
+}
+
+/* Style for the title */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #e6b800; /* Default color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Georgia', serif;
+}
+
+/* Highlighted words in the verse */
+.highlight {
+    font-weight: bold;
+    color: #ff8c00; /* Default color */
+}
+
+/* Semi-transparent overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.0); /* More transparent this one does the background*/
+    z-index: 1;
+}
+
+/* Container for the verse and title */
+.container {
+    background-color: rgba(0, 0, 0, 0.6); /* Default color */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
+    overflow: auto; /* Enable scrolling */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Verse styling */
+.verse p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Theme classes */
+.theme-teal-purple .container {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #FFFFFF; /* While */
+}
+
+.theme-teal-purple h1 {
+    color: #FFD700; /* Purple */
+}
+
+.theme-teal-purple .highlight {
+    color: #800080; /* Purple */
+}
+
+.theme-gold-theme .container {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #FFFFFF; /* White */
+}
+
+.theme-gold-theme h1 {
+    color: #ffcc00; /* Bright Gold */
+}
+
+.theme-gold-theme .highlight {
+    color: #ff5733; /* Orange */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    /* Adjust title font size */
+    h1 {
+        font-size: 2rem;
+    }
+
+    /* Adjust verse text size */
+    .verse p {
+        font-size: 1rem;
+    }
+
+    /* Make the container width smaller */
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjust title and verse text for small screens */
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .verse p {
+        font-size: 0.9rem;
+    }
+
+    /* Make the container padding more compact */
+    .container {
+        padding: 15px;
+    }
+}
