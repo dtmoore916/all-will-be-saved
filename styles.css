@@ -18,7 +18,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    overflow: auto; /* Enable vertical scrolling */
 }
 
 /* Style for the title */
@@ -65,7 +64,25 @@ h1 {
 .verse p {
     font-size: 1.2rem;
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+/* Style for links section */
+.links p {
+    font-size: 1rem; /* Adjusted font size for better readability */
+    line-height: 1.5;
+    margin-bottom: 20px; /* Margin for spacing */
+}
+
+.links a {
+    color: #FFD700; /* Gold color to make the link standout */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Emphasize link */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.links a:hover {
+    color: #FF8C00; /* Color change on hover for better interactivity */
 }
 
 /* Theme classes */
@@ -94,6 +111,28 @@ h1 {
 .theme-gold-theme .highlight {
     color: #ff5733; /* Orange */
 }
+
+/* Existing CSS remains unchanged above this line */
+
+/* Additional highlight colors for Teal-Purple Theme */
+.theme-teal-purple .highlight1 {
+    color: #5F9EA0; /* Cadet Blue */
+}
+
+.theme-teal-purple .highlight2 {
+    color: #4682B4; /* Steel Blue */
+}
+
+/* Additional highlight colors for Gold Theme */
+.theme-gold-theme .highlight1 {
+    color: #FFD700; /* Gold */
+}
+
+.theme-gold-theme .highlight2 {
+    color: #FFA500; /* Orange */
+}
+
+/* Rest of the CSS stays the same */
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {

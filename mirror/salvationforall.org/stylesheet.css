@@ -1,0 +1,289 @@
+﻿body{
+	width:100%;
+	margin: 0px 0px 0px 0px;
+	
+	background-image: url('images/dark_wood.png');
+	background-repeat:repeat;
+}
+
+#header{
+	margin-left: auto;
+      margin-right:auto;
+      margin-top:0px;
+      max-width: 900px;
+      height:60px;
+      
+}
+
+/* comment: page formatting make a container to constrain width and center */
+#pagecontainer {
+      margin-left: auto;
+      margin-right:auto;
+      margin-top:0px;
+      padding-top:0px;
+      max-width: 900px;
+          }
+
+#toc{
+	background-color: #80c3ff;
+	border:medium gray solid;
+	width:200px;
+	float: left;
+}
+
+#toc h2{
+text-align:left;
+margin: 5px;
+}
+
+#toc h3{
+	text-align:left;
+	margin-left:10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+	text-align: left;
+font-family:Georgia, "Times New Roman", Times, serif;
+margin:5px 5px 5px 5px;
+padding:5px 5px 5px 5px;
+font-size:medium;
+	
+}
+a{
+color:black;
+display: inline-block;
+word-break: break-word;
+
+	
+}
+
+/* comment: end of toc menu styling */
+
+
+/* comment: Makes menu hamburger disappear if screen is big */
+
+@media only screen and (min-width: 895px) {
+	#menu{
+	display:none;
+	
+}
+#menuclose{
+	display:none;
+}
+
+}/* comment: end of media query */
+
+
+/* comment: media query for small screens */
+@media only screen and (max-width: 895px) {
+
+ #content{
+ 	
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+#toc{
+	display:none;
+	float:none;
+	width: 90%;
+	margin-left:auto;
+	margin-right:auto;
+	}
+/* comment: Makes menu hamburger re-appear if screen is small */	
+	#menu{
+	display: inline;
+	float:left;
+}
+#menuclose{
+	display: none;
+	float:left;
+}
+
+
+  
+}/* comment: end of media query */
+
+
+/* comment: page formatting make a container to constrain width and center */
+
+
+
+#content {
+      float:right;
+      margin-top:0px;
+      padding-left: 30px;
+      padding-right:30px;
+      padding-top:0px;
+      max-width: 600px;
+      background-color:white;
+      border:medium gray solid;  
+
+      }
+
+
+
+h1{
+text-align: center;
+text-decoration: underline;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:large;
+
+}
+
+h2{
+text-align: center;
+text-decoration: underline;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:medium;
+}
+
+h3{
+text-align: center;
+text-decoration: underline;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:small;
+}
+
+
+p{
+
+text-align: left;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:medium;
+margin:5px;
+padding:5px;
+  
+
+}
+
+
+#logo {
+	color:gray;
+    text-align:right;
+    float:right;
+    width:60%;
+    height: 46px;
+
+}
+
+
+.nextchapter{
+	float:right;
+	background-color: #80c3ff;
+	border:medium gray solid;
+	width:200px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:medium;
+	text-align:center;
+	padding:5px 5px 5px 5px;
+	margin-bottom:20px;
+
+
+}
+
+
+.previouschapter{
+	float:left;
+	background-color: #80c3ff;
+	border:medium gray solid;
+	width:200px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:medium;
+	text-align:center;
+	padding:5px 5px 5px 5px;
+	margin-bottom:20px;
+}
+
+
+@media only screen and (max-width: 450px) {
+	.nextchapter{
+	
+	display:block;
+	width:200px;
+	float:none;
+	margin-left:auto;
+	margin-right:auto;
+	}
+	
+	.previouschapter{
+	
+	display:block;
+	width:200px;
+	float:none;
+	margin-left:auto;
+	margin-right:auto;
+	}
+
+}
+
+.center{
+	text-align:center;
+}
+
+.box{
+	border:thin gray solid;
+	background-color:#80c3ff;
+	margin-left:auto;
+	margin-right:auto;
+	width:90%;
+	padding:5px;
+}
+
+table{
+display:block;
+width:100%;
+border-collapse:collapse;
+
+}
+
+td{
+	vertical-align: top;
+	border:1px gray solid;
+}
+
+img{
+	 
+	 max-width: 100%;
+	 height: auto;
+}
+
+#googlesearch{
+	display: none;
+
+}
+#searchclose{
+	display:none;
+}
+
+.caption{
+	font-size:small;
+	text-align:center;
+}
+
+.picwithcaption{
+	
+	float:right;
+	margin: 0 10px 10px 10px;
+    padding: 15px;
+    border: 1px solid black;
+    text-align: center;">
+
+}
+
+@media only screen and (orientation: portrait) {
+.picwithcaption{
+	float:none;
+	clear:both;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+}
